@@ -10,6 +10,11 @@
   "author": "Ekpang Michael",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "cors": "2.8.5",
     "dotenv": "8.0.0",
     "express": "^4.16.3",
@@ -20,12 +25,7 @@
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.6",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
+    "@babel/preset-env": "^7.5.5"
   },
   "engines": {
     "node": "8.x"
