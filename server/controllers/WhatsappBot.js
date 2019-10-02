@@ -66,7 +66,15 @@ var WhatsappBot = function () {
                 twiml = new MessagingResponse();
                 q = req.body.Body;
                 if (q === 'hello') {
-                  twiml.message('Hello you!');
+                  twiml.message('Hello you !');
+                  return _context.abrupt('return', res.status(200).send(twiml.toString()))
+                }
+                if (q === 'ca va ?') {
+                  twiml.message(':)');
+                  return _context.abrupt('return', res.status(200).send(twiml.toString()))
+                }
+                if (q === "comment tu t'appeles ?") {
+                  twiml.message('Je suis Eva 1.0');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
                 options = { cx: cx, q: q, auth: googleApiKey };
