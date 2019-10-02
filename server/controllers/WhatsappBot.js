@@ -74,7 +74,7 @@ var WhatsappBot = function () {
                   twiml.message('☺️');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
-                if (q === "comment tu t'appeles ?") {
+                if (q === "comment tu t'appelles ?") {
                   twiml.message('Je suis Eva 1.0');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
