@@ -65,6 +65,7 @@ var WhatsappBot = function () {
               case 0:
                 twiml = new MessagingResponse();
                 q = req.body.Body;
+                console.log(q)
                 if (q === 'hello') {
                   twiml.message('Hello you !');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
