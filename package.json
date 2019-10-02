@@ -4,7 +4,7 @@
   "description": "A whatspp bot that uses twilio ",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server/server.js",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ekpang Michael",
@@ -20,7 +20,12 @@
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
     "@babel/node": "^7.5.5",
-    "@babel/preset-env": "^7.5.5"
+    "@babel/preset-env": "^7.5.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
   },
   "engines": {
     "node": "8.x"

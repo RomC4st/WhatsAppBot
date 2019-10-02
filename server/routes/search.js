@@ -1,8 +1,19 @@
-import { Router } from 'express';
-import WhatsappBot from '../controllers/WhatsappBot';
+'use strict';
 
-const botRouter = Router();
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-botRouter.post('/incoming', WhatsappBot.googleSearch);
+var _express = require('express');
+
+var _WhatsappBot = require('../controllers/WhatsappBot');
+
+var _WhatsappBot2 = _interopRequireDefault(_WhatsappBot);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var botRouter = (0, _express.Router)();
+
+botRouter.post('/incoming', _WhatsappBot2.default.googleSearch);
 //
-export default botRouter;
+exports.default = botRouter;

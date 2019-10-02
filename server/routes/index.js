@@ -1,7 +1,18 @@
-import { Router } from 'express';
-import botRouter from './search';
+'use strict';
 
-const v1Router = Router();
-v1Router.use('/api/v1', botRouter);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 
-export default v1Router;
+var _express = require('express');
+
+var _search = require('./search');
+
+var _search2 = _interopRequireDefault(_search);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var v1Router = (0, _express.Router)();
+v1Router.use('/api/v1', _search2.default);
+
+exports.default = v1Router;
