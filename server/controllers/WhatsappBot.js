@@ -66,15 +66,15 @@ var WhatsappBot = function () {
                 twiml = new MessagingResponse();
                 q = req.body.Body;
                 console.log(q)
-                if (q === 'hello') {
+                if (q.toLowerCase() === 'hello') {
                   twiml.message('Hello you !');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
-                if (q === 'ca va ?') {
+                if (q.toLowerCase() === 'ca va ?') {
                   twiml.message('☺️');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
-                if (q === "comment tu t'appelles ?") {
+                if (q.toLowerCase() === "comment tu t'appelles ?") {
                   twiml.message('Je suis Eva 1.0');
                   return _context.abrupt('return', res.status(200).send(twiml.toString()))
                 }
