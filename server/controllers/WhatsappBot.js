@@ -1,5 +1,4 @@
 'use strict';
-require("babel-core/register");
 require("babel-polyfill");
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -26,10 +25,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 _dotenv2.default.config();
 
 var _process$env = process.env,
-    accountSid = _process$env.SID,
-    TwilloAuthToken = _process$env.KEY,
-    googleApiKey = _process$env.APIKEY,
-    cx = _process$env.CX;
+  accountSid = _process$env.SID,
+  TwilloAuthToken = _process$env.KEY,
+  googleApiKey = _process$env.APIKEY,
+  cx = _process$env.CX;
 
 
 (0, _twilio2.default)(accountSid, TwilloAuthToken);
